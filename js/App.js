@@ -1,19 +1,13 @@
-var div = React.DOM.div
-var h1 = React.DOM.h1
+var React = require('react')
+var ReactDOM = require('react-dom')
 
-var MyTitle = React.createClass({
-    render () {
-        return (
-            div(null,
-                h1(null, 'Check out')
-            )
-        )
-    }
-})
+var MyTitle = require('./Components/Search/ListItem.js')
+
+var div = React.DOM.div
 
 var MyFirstComponent = (
-    div(null,
-    React.createElement(MyTitle, null))
+  div(null,
+  React.createElement(MyTitle, null))
 )
 
 ReactDOM.render(MyFirstComponent, document.getElementById('app'))

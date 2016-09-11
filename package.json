@@ -4,12 +4,17 @@
   "description": "User Interface for Brunos List",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
-  "author": "",
+  "author": "Joe Ybarra <joe@thinkbean.com>",
   "license": "ISC",
   "dependencies": {
     "react": "^15.3.1",
-    "react-dom": "^15.3.1"
+    "react-dom": "^15.3.1",
+    "react-google-maps": "^4.11.0",
+    "react-router": "^2.8.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
   }
 }

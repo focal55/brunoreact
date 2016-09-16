@@ -4,7 +4,8 @@
   "description": "User Interface for Brunos List",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "build": "webpack js/App.js public/bundle.js"
   },
   "author": "Joe Ybarra <joe@thinkbean.com>",
   "license": "ISC",

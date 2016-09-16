@@ -4,7 +4,7 @@ const Header = require('./Components/Layout/header.jsx')
 
 const App = () => (
   <div className='app-container'>
-    <Header></Header>
+    <Header />
     <div className='search-filter-wrapper'>
       Filter Form
     </div>

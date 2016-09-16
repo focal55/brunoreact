@@ -1,5 +1,5 @@
 // header.js
-var React = require('react');
+var React = require('react')
 
 require('sass/layout/header')
 
@@ -9,8 +9,8 @@ var Header = React.createClass({
       <div className="header">
         Header
       </div>
-    );
+    )
   }
-});
+})
 
 module.exports = Header

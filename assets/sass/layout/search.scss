@@ -1,0 +1,48 @@
+@import '../base/susy';
+
+.search-filter-wrapper {
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+.display-wrapper {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#search-listing-wrapper {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background: #f7f7f7;
+  overflow-y:scroll;
+}
+#search-listing-wrapper .item {
+  clear: both;
+  overflow: hidden;
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid #ccc;
+}
+#search-listing-wrapper .item img {
+  float: left;
+  margin-right: 15px;
+}
+.search-map-wrapper {
+  position: fixed;
+  right: 0;
+  left: auto;
+  bottom: 0;
+  width: 60%;
+  height: 100%;
+}
+.search-map-wrapper #map-canvas {
+  height: 100%;
+}

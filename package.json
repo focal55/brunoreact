@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "standard",
-    "build": "webpack js/App.js public/bundle.js"
+    "build": "webpack"
   },
   "author": "Joe Ybarra <joe@thinkbean.com>",
   "license": "ISC",
@@ -16,6 +16,13 @@
     "react-router": "^2.8.0"
   },
   "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "babel-polyfill": "^6.7.4",
+    "json-loader": "^0.5.4",
     "webpack": "^1.13.2"
   }
 }

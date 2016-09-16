@@ -18,8 +18,13 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.jsx?S/,
-        loader: 'babel-loader'
+        test: /\.jsx?$/,
+        loader: 'babel',
+        exclude: /node_modules/,
+        query: {
+          cacheDirectory: true,
+          presets: ['react', 'es2015']
+        }
       }
     ]
   }

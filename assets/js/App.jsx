@@ -1,20 +1,20 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
-const Header = require('./Components/Layout/header.jsx')
+const {Router, Route, IndexRoute, hashHistory} = require('react-router')
+
+// Layout.
+const RegularLayout = require('./Components/Layout/RegularLayout.jsx')
+
+// Scenes.
+const Intro = require('./Components/Scenes/Intro.jsx')
+const Search = require('./Components/Scenes/Search.jsx')
 
 const App = () => (
-  <div className='app-container'>
-    <Header />
-    <div className='search-filter-wrapper'>
-      Filter Form
-    </div>
-    <div className='display-wrapper'>
-      <div className='search-listing-wrapper'></div>
-      <div className='search-map-wrapper'>
-        <div className='map-canvas'></div>
-      </div>
-    </div>
-  </div>
+  <Router history={hashHistory}>
+    <Route path='/' component={RegularLayout}>
+      <IndexRoute component={Intro} />
+      <Route path='/search' component={Search} />
+    </Route>
+  </Router>
 )
-
 ReactDOM.render(<App />, document.getElementById('app'))
